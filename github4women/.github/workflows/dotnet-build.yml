@@ -1,21 +1,9 @@
-name: Meu Workflow
+name: Teste Simples
 
-on:
-  push:
-    branches:
-      - main
-  schedule:
-    - cron: '0 * * * *' # Executa a cada hora
+on: push
 
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout do repositório
-        uses: actions/checkout@v3  # action pré-existente
-
-      - name: Rodar script personalizado
-        run: |
-          echo "Olá! Este é um script personalizado rodando no workflow."
-          date
+      - run: echo "Workflow funcionando!"
