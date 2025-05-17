@@ -1,0 +1,12 @@
+git add .github/workflows/main.yml
+git commit -m "Adiciona workflow para push e execução horária"
+git push origin main
+
+
+git add .github/workflows/dotnet-build.yml
+git commit -m "Adiciona workflow dotnet com execução horária"
+git push origin main
+
+git branch
+
+
